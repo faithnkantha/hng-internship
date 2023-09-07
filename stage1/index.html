@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="overview">
+    <h1 data-testid="Faith Nkatha">Faith Nkatha</h1>
+    <img src="profile.png" alt="Faith Nkatha" data-testid="slackDisplayImage">
+    <h2 data-testid="currentDayOfTheWeek" id="currentDayOfTheWeek">
+    <script>
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const d = new Date();
+    let day = days[d.getDay()];
+    document.getElementById("currentDayOfTheWeek").innerHTML = day
+    </script>
+    </h2>
+
+    <h2 data-testid="currentUTCTime" id="currentUTCTime"></h2>
+    <script>
+         let date=new Date();
+         date.setUTCMilliseconds(101);
+         document.getElementById("currentUTCTime").innerHTML = date
+    </script>
+    <h2 data-testid="myTrack">frontend</h2>
+    <a href="https://github.com/faithnkantha/hng-internship" data-testid="githubURL"> github</a>
+</div>
+</body>
+</html>
